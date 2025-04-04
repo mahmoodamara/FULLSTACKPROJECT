@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    alert("Welcome to my site!");
+    const button = document.createElement('button');
+    button.innerText = "Click Me!";
+    button.className = "btn btn-success";
+    button.onclick = () => alert("You clicked the button!");
+    document.body.appendChild(button);
   });
   
